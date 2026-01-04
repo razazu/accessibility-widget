@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![RTL Support](https://img.shields.io/badge/RTL-Hebrew-orange)](https://github.com/razazu/accessibility-widget)
 
-**Created by [Raz Azulay](https://razazulay.com) | Powered by [FlowRaz](https://flowraz.com)**
+**Created by [Raz Azulay](https://flowraz.io) | Powered by [FlowRaz](https://flowraz.io)**
 
 </div>
 
@@ -348,7 +348,7 @@ MIT License - Free for personal and commercial use.
 
 **Raz Azulay** - Full Stack Developer
 
-- Website: [razazulay.com](https://razazulay.com)
+- Website: [flowraz.io](https://flowraz.io)
 - GitHub: [@razazu](https://github.com/razazu)
 - Company: [FlowRaz](https://flowraz.io)
 
@@ -358,7 +358,7 @@ MIT License - Free for personal and commercial use.
 
 - [GitHub Issues](https://github.com/razazu/accessibility-widget/issues)
 - [Documentation](https://github.com/razazu/accessibility-widget#readme)
-- Email: raz@flowraz.com
+- Email: support@flowraz.io
 
 ---
 
