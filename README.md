@@ -1,26 +1,38 @@
-# @razazu/accessibility-widget
+# FlowRaz Accessibility Widget
 
-A powerful accessibility widget with full RTL (Hebrew) support. Works with **React/Next.js**, **WordPress**, **Elementor**, and **any HTML website**.
+<div align="center">
 
-![Accessibility Widget](https://img.shields.io/badge/accessibility-WCAG%202.1-green)
-![License](https://img.shields.io/badge/license-MIT-blue)
+**תוסף נגישות חכם לכל אתר**
 
-## Features
+[![npm version](https://img.shields.io/npm/v/@razazu/accessibility-widget.svg)](https://www.npmjs.com/package/@razazu/accessibility-widget)
+[![Accessibility](https://img.shields.io/badge/accessibility-WCAG%202.1-green)](https://www.w3.org/WAI/WCAG21/quickref/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![RTL Support](https://img.shields.io/badge/RTL-Hebrew-orange)](https://github.com/razazu/accessibility-widget)
 
-- **Font Size Control** - Increase/decrease text size (4 levels)
-- **High Contrast Mode** - Enhanced contrast for better visibility
-- **Highlight Links** - Make all links clearly visible
-- **Stop Animations** - Disable all animations and transitions
-- **Reading Mode** - Optimized layout for reading
-- **Dyslexia Font** - OpenDyslexic font support
-- **RTL Support** - Full Hebrew/RTL language support
-- **Persistent Settings** - Saves preferences to localStorage
-- **Widget Customization** - Color picker, position settings (desktop/mobile)
-- **Keyboard Accessible** - Full keyboard navigation support
+**Created by [Raz Azulay](https://razazulay.com) | Powered by [FlowRaz](https://flowraz.com)**
+
+</div>
 
 ---
 
-## Installation Options
+A powerful accessibility widget with full RTL (Hebrew) support. Works with **React/Next.js**, **WordPress**, **Elementor**, and **any HTML website**.
+
+## ✨ Features
+
+- **🔤 Font Size Control** - Increase/decrease text size (4 levels)
+- **🎨 High Contrast Mode** - Enhanced contrast for better visibility
+- **🔗 Highlight Links** - Make all links clearly visible
+- **⏹️ Stop Animations** - Disable all animations and transitions
+- **📖 Reading Mode** - Optimized layout for reading
+- **🔠 Dyslexia Font** - OpenDyslexic font support
+- **↔️ RTL Support** - Full Hebrew/RTL language support
+- **💾 Persistent Settings** - Saves preferences to localStorage
+- **⚙️ Widget Customization** - Color picker, position settings (desktop/mobile)
+- **⌨️ Keyboard Accessible** - Full keyboard navigation support
+
+---
+
+## 🚀 Installation Options
 
 Choose the installation method that fits your platform:
 
@@ -326,13 +338,34 @@ Font size changes are applied via CSS custom property `--a11y-font-scale`.
 
 ---
 
-## License
+## 📄 License
 
-MIT - Created by [Raz Azulay](https://github.com/razazu)
+MIT License - Free for personal and commercial use.
 
 ---
 
-## Support
+## 👨‍💻 Author
+
+**Raz Azulay** - Full Stack Developer
+
+- Website: [razazulay.com](https://razazulay.com)
+- GitHub: [@razazu](https://github.com/razazu)
+- Company: [FlowRaz](https://flowraz.com)
+
+---
+
+## 🤝 Support
 
 - [GitHub Issues](https://github.com/razazu/accessibility-widget/issues)
 - [Documentation](https://github.com/razazu/accessibility-widget#readme)
+- Email: raz@flowraz.com
+
+---
+
+<div align="center">
+
+**Built with ❤️ by [FlowRaz](https://flowraz.com)**
+
+*Making the web accessible for everyone*
+
+</div>

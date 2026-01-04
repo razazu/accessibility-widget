@@ -1,7 +1,7 @@
 {
   "name": "@razazu/accessibility-widget",
   "version": "1.1.0",
-  "description": "Accessibility widget with RTL support - React component + Vanilla JS for any website",
+  "description": "FlowRaz Accessibility Widget - תוסף נגישות חכם לכל אתר. React component + Vanilla JS with full RTL/Hebrew support.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -38,7 +38,11 @@
     "wordpress",
     "elementor"
   ],
-  "author": "Raz Azulay",
+  "author": {
+    "name": "Raz Azulay",
+    "email": "raz@flowraz.com",
+    "url": "https://razazulay.com"
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
