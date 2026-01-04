@@ -1,8 +1,8 @@
 # Dependencies
 node_modules/
 
-# Build output
-dist/
+# Build output (keeping dist/ for CDN access)
+# dist/
 
 # IDE
 .idea/
