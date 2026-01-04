@@ -350,7 +350,7 @@ MIT License - Free for personal and commercial use.
 
 - Website: [razazulay.com](https://razazulay.com)
 - GitHub: [@razazu](https://github.com/razazu)
-- Company: [FlowRaz](https://flowraz.com)
+- Company: [FlowRaz](https://flowraz.io)
 
 ---
 
@@ -364,7 +364,7 @@ MIT License - Free for personal and commercial use.
 
 <div align="center">
 
-**Built with ❤️ by [FlowRaz](https://flowraz.com)**
+**Built with ❤️ by [FlowRaz](https://flowraz.io)**
 
 *Making the web accessible for everyone*
 
