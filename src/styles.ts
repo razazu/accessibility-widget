@@ -338,45 +338,53 @@ export const getStyles = (primaryColor: string, isRTL: boolean) => `
     word-spacing: 0.1em !important;
   }
 
-  /* Position variants */
+  /* Position variants - absolute positions regardless of RTL */
   .a11y-widget-trigger.bottom-right {
     bottom: 20px;
-    ${isRTL ? "left" : "right"}: 20px;
+    right: 20px;
+    left: auto;
   }
 
   .a11y-widget-trigger.bottom-left {
     bottom: 20px;
-    ${isRTL ? "right" : "left"}: 20px;
+    left: 20px;
+    right: auto;
   }
 
   .a11y-widget-trigger.top-right {
     top: 20px;
-    ${isRTL ? "left" : "right"}: 20px;
+    right: 20px;
+    left: auto;
   }
 
   .a11y-widget-trigger.top-left {
     top: 20px;
-    ${isRTL ? "right" : "left"}: 20px;
+    left: 20px;
+    right: auto;
   }
 
   .a11y-widget-panel.bottom-right {
     bottom: 90px;
-    ${isRTL ? "left" : "right"}: 20px;
+    right: 20px;
+    left: auto;
   }
 
   .a11y-widget-panel.bottom-left {
     bottom: 90px;
-    ${isRTL ? "right" : "left"}: 20px;
+    left: 20px;
+    right: auto;
   }
 
   .a11y-widget-panel.top-right {
     top: 90px;
-    ${isRTL ? "left" : "right"}: 20px;
+    right: 20px;
+    left: auto;
   }
 
   .a11y-widget-panel.top-left {
     top: 90px;
-    ${isRTL ? "right" : "left"}: 20px;
+    left: 20px;
+    right: auto;
   }
 
   /* Animation */
