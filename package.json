@@ -1,15 +1,21 @@
 {
   "name": "@razazu/accessibility-widget",
-  "version": "1.0.0",
-  "description": "React accessibility widget with RTL support - font size, contrast, animations control and more",
+  "version": "1.1.0",
+  "description": "Accessibility widget with RTL support - React component + Vanilla JS for any website",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
+  "unpkg": "dist/accessibility-widget.min.js",
+  "jsdelivr": "dist/accessibility-widget.min.js",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
+    },
+    "./vanilla": {
+      "import": "./dist/accessibility-widget.min.js",
+      "require": "./dist/accessibility-widget.min.js"
     }
   },
   "files": [
@@ -27,7 +33,10 @@
     "widget",
     "rtl",
     "hebrew",
-    "wcag"
+    "wcag",
+    "vanilla",
+    "wordpress",
+    "elementor"
   ],
   "author": "Raz Azulay",
   "license": "MIT",
@@ -35,9 +44,21 @@
     "type": "git",
     "url": "https://github.com/razazu/accessibility-widget.git"
   },
+  "homepage": "https://github.com/razazu/accessibility-widget#readme",
+  "bugs": {
+    "url": "https://github.com/razazu/accessibility-widget/issues"
+  },
   "peerDependencies": {
     "react": ">=17.0.0",
     "react-dom": ">=17.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@types/react": "^19.2.7",
