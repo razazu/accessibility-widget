@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowRaz Accessibility Widget - הדגמה אינטראקטיבית</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .page-wrapper {
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .container {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0 0 15px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .hero p {
+            font-size: 1.3em;
+            margin: 0;
+            opacity: 0.95;
+        }
+        .alert-box {
+            background: #fff3cd;
+            border: 3px solid #ffc107;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.2);
+        }
+        .alert-box h2 {
+            margin-top: 0;
+            color: #856404;
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .alert-box ul {
+            padding-right: 25px;
+            margin: 15px 0;
+        }
+        .alert-box li {
+            margin: 12px 0;
+            color: #856404;
+            line-height: 1.6;
+            font-size: 1.05em;
+        }
+        .alert-box strong {
+            color: #664d03;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 12px;
+            margin-top: 45px;
+            font-size: 2em;
+        }
+        p {
+            line-height: 1.9;
+            color: #555;
+            font-size: 1.15em;
+            margin: 20px 0;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 35px 0;
+        }
+        .feature-card {
+            padding: 25px;
+            background: linear-gradient(145deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 12px;
+            border-right: 5px solid #3498db;
+            transition: all 0.3s ease;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature-card:hover {
+            transform: translateX(-8px);
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+        }
+        .feature-card h3 {
+            color: #2c3e50;
+            margin: 0 0 12px 0;
+            font-size: 1.4em;
+        }
+        .feature-card p {
+            margin: 0;
+            font-size: 1em;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        .btn-group {
+            text-align: center;
+            margin: 50px 0 30px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            background: #3498db;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+            font-size: 1.1em;
+        }
+        .btn:hover {
+            background: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4);
+            text-decoration: none;
+            color: white;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #e0e0e0;
+            color: #999;
+            font-size: 0.95em;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #e83e8c;
+        }
+        .tech-list {
+            padding-right: 25px;
+        }
+        .tech-list li {
+            margin: 12px 0;
+            line-height: 1.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="hero">
+                <h1>🌟 FlowRaz Accessibility Widget</h1>
+                <p>תוסף נגישות חכם ומתקדם שמשפר חוויית גלישה לכולם</p>
+            </div>
+
+            <div class="alert-box">
+                <h2>👉 איך להשתמש בווידג'ט?</h2>
+                <ul>
+                    <li><strong>שלב 1:</strong> חפש את <strong>הכפתור הסגול הצף ♿</strong> בפינה השמאלית התחתונה</li>
+                    <li><strong>שלב 2:</strong> לחץ עליו כדי לפתוח את פאנל הנגישות</li>
+                    <li><strong>שלב 3:</strong> נסה כל תכונה:
+                        <ul style="margin-top: 10px;">
+                            <li>🔤 <strong>גודל טקסט</strong> - הקלק +/- לשינוי (4 רמות)</li>
+                            <li>🎨 <strong>ניגודיות גבוהה</strong> - רקע שחור + טקסט לבן</li>
+                            <li>🔗 <strong>הדגשת קישורים</strong> - רקע צהוב בוהק לכל הקישורים</li>
+                            <li>⏹️ <strong>עצירת אנימציות</strong> - הקפאת כל התנועות</li>
+                            <li>📖 <strong>מצב קריאה</strong> - מרכוז תוכן + מרווח שורות</li>
+                            <li>🔠 <strong>גופן דיסלקציה</strong> - גופן מותאם מיוחד</li>
+                        </ul>
+                    </li>
+                    <li><strong>שלב 4:</strong> לחץ על <strong>⚙️ גלגל שיניים</strong> כדי לשנות:
+                        <ul style="margin-top: 10px;">
+                            <li>צבע הכפתור (8 אפשרויות)</li>
+                            <li>מיקום בדסקטופ ומובייל</li>
+                        </ul>
+                    </li>
+                    <li><strong>טיפ:</strong> לחץ <code>ESC</code> לסגירה מהירה | כל ההגדרות נשמרות אוטומטית! 💾</li>
+                </ul>
+            </div>
+
+            <h2>✨ תכונות מתקדמות</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>🔤 שליטה בגודל טקסט</h3>
+                    <p>4 רמות שונות: 100%, 115%, 130%, 150% - מושלם לכל סוג משתמש</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 ניגודיות גבוהה</h3>
+                    <p>מצב מיוחד עם רקע שחור וטקסט לבן לנראות מקסימלית</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔗 הדגשת קישורים</h3>
+                    <p>כל הקישורים מודגשים ברקע צהוב בוהק לזיהוי מיידי</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⏹️ עצירת אנימציות</h3>
+                    <p>השבתת כל האנימציות, מעברים ותנועות באתר</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📖 מצב קריאה נוח</h3>
+                    <p>התאמת רוחב תוכן ומרווח שורות לקריאה אופטימלית</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔠 גופן לדיסלקציה</h3>
+                    <p>גופן מותאם במיוחד לאנשים עם דיסלקציה</p>
+                </div>
+            </div>
+
+            <h2>📋 על הפרויקט</h2>
+            <p>
+                <strong>FlowRaz Accessibility Widget</strong> הוא פתרון נגישות מקיף ומקצועי שפותח במיוחד
+                לשפר את חוויית הגלישה עבור אנשים עם צרכים מיוחדים. הווידג'ט תומך באופן מלא בעברית (RTL)
+                ומספק מגוון רחב של תכונות נגישות המבוססות על תקני <strong>WCAG 2.1</strong>.
+            </p>
+            <p>
+                הפרויקט נבנה עם טכנולוגיות מתקדמות כמו <strong>TypeScript</strong> ו-<strong>React</strong>,
+                ומספק גרסה נפרדת ל-<strong>Vanilla JavaScript</strong> לשימוש באתרים סטטיים. כל ההגדרות
+                נשמרות ב-<code>localStorage</code> ונשארות לביקורים הבאים.
+            </p>
+
+            <h2>🚀 פלטפורמות נתמכות</h2>
+            <ul class="tech-list">
+                <li>⚛️ <strong>React / Next.js</strong> - התקנה דרך npm עם TypeScript מלא</li>
+                <li>📝 <strong>WordPress</strong> - הוספה פשוטה ל-functions.php או דרך תוסף</li>
+                <li>🎨 <strong>Elementor</strong> - שימוש קל ב-HTML widget</li>
+                <li>🌐 <strong>כל אתר HTML</strong> - הוספת תג script בודד</li>
+                <li>💻 <strong>גרסת Vanilla JS</strong> - ללא תלויות חיצוניות</li>
+            </ul>
+
+            <h2>🔧 התקנה מהירה</h2>
+            <p>להתקנה באתר שלך, פשוט הוסף את הקוד הבא לפני תג <code>&lt;/body&gt;</code>:</p>
+            <pre style="background: #2c3e50; color: #ecf0f1; padding: 20px; border-radius: 10px; overflow-x: auto; direction: ltr; text-align: left;"><code>&lt;script src="https://cdn.jsdelivr.net/gh/razazu/accessibility-widget@latest/dist/accessibility-widget.min.js"
+        data-language="he"
+        data-color="#8b5cf6"&gt;&lt;/script&gt;</code></pre>
+
+            <div class="btn-group">
+                <a href="https://github.com/razazu/accessibility-widget" class="btn" target="_blank">
+                    📦 GitHub Repository
+                </a>
+                <a href="https://flowraz.io" class="btn" target="_blank">
+                    🌐 FlowRaz Website
+                </a>
+                <a href="https://www.npmjs.com/package/@razazu/accessibility-widget" class="btn" target="_blank">
+                    📦 NPM Package
+                </a>
+            </div>
+
+            <div class="footer">
+                <p>
+                    נוצר על ידי <a href="https://flowraz.io" target="_blank">Raz Azulay</a> |
+                    <a href="https://github.com/razazu" target="_blank">@razazu</a>
+                </p>
+                <p>© 2026 FlowRaz - Making the web accessible for everyone</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load the Accessibility Widget from CDN -->
+    <script src="https://cdn.jsdelivr.net/gh/razazu/accessibility-widget@latest/dist/accessibility-widget.min.js"
+            data-language="he"
+            data-color="#8b5cf6"></script>
+</body>
+</html>
