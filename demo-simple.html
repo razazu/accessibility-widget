@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowRaz Accessibility Widget - הדגמה</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5em;
+        }
+        .instructions {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .instructions h2 {
+            margin-top: 0;
+            color: #856404;
+        }
+        .instructions ul {
+            padding-right: 20px;
+        }
+        .instructions li {
+            margin: 10px 0;
+            color: #856404;
+        }
+        .example-content {
+            margin: 30px 0;
+        }
+        .example-content h2 {
+            color: #34495e;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .example-content p {
+            line-height: 1.8;
+            color: #555;
+        }
+        .example-content a {
+            color: #3498db;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 FlowRaz Accessibility Widget</h1>
+
+        <div class="instructions">
+            <h2>👉 הוראות שימוש:</h2>
+            <ul>
+                <li><strong>לחץ על הכפתור הסגול ♿</strong> שמופיע בפינה התחתונה</li>
+                <li><strong>נסה כל תכונה:</strong>
+                    <ul>
+                        <li>🔤 גודל טקסט - +/- לשינוי (0-3)</li>
+                        <li>🎨 ניגודיות גבוהה - רקע שחור + טקסט לבן</li>
+                        <li>🔗 הדגשת קישורים - רקע צהוב</li>
+                        <li>⏹️ עצירת אנימציות</li>
+                        <li>📖 מצב קריאה</li>
+                        <li>🔠 גופן דיסלקציה</li>
+                    </ul>
+                </li>
+                <li><strong>לחץ על ⚙️</strong> בכותרת הווידג'ט כדי לשנות צבע ומיקום</li>
+                <li><strong>לחץ ESC</strong> לסגירה מהירה</li>
+                <li>ההגדרות נשמרות אוטומטית!</li>
+            </ul>
+        </div>
+
+        <div class="example-content">
+            <h2>על הפרויקט</h2>
+            <p>
+                <strong>FlowRaz Accessibility Widget</strong> הוא פתרון נגישות מקיף שנועד לשפר את חוויית המשתמש
+                באתרים עבור אנשים עם צרכים מיוחדים. הווידג'ט תומך בעברית מלאה (RTL) ומספק מגוון רחב של
+                תכונות נגישות בהתאם לתקני WCAG 2.1.
+            </p>
+
+            <h2>קישורים שימושיים</h2>
+            <p>
+                🔗 <a href="https://github.com/razazu/accessibility-widget" target="_blank">GitHub Repository</a><br>
+                🌐 <a href="https://flowraz.io" target="_blank">FlowRaz Website</a><br>
+                📦 <a href="https://www.npmjs.com/package/@razazu/accessibility-widget" target="_blank">NPM Package</a>
+            </p>
+
+            <h2>תכונות מתקדמות</h2>
+            <p>
+                הווידג'ט כולל תמיכה ב-React, WordPress, Elementor וכל אתר HTML. ההתקנה פשוטה ומהירה,
+                וניתן להתאים אישית את הצבעים, המיקום והשפה בקלות.
+            </p>
+
+            <p style="text-align: center; margin-top: 40px; color: #999; font-size: 0.9em;">
+                נוצר על ידי <a href="https://flowraz.io" target="_blank">Raz Azulay</a> | @razazu
+            </p>
+        </div>
+    </div>
+
+    <!-- Load Widget from CDN -->
+    <script src="https://cdn.jsdelivr.net/gh/razazu/accessibility-widget@latest/dist/accessibility-widget.min.js"
+            data-language="he"
+            data-color="#8b5cf6"></script>
+</body>
+</html>
